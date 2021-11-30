@@ -45,10 +45,10 @@
                 android:padding="10dp">
 
                 <TextView
-                    android:padding="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
+                    android:padding="5dp"
                     android:text="Company Name"
                     android:textColor="#000" />
 
@@ -71,13 +71,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/black"
-                    android:hint=""/>
+                    android:hint="" />
 
                 <TextView
-                    android:padding="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
+                    android:padding="5dp"
                     android:text="Address"
                     android:textColor="#000" />
 
@@ -146,11 +146,26 @@
                 </LinearLayout>
 
                 <TextView
-                    android:padding="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
+                    android:padding="5dp"
                     android:text="Facebook Page Or Website Url"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/facebook_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:hint="" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:text="Business Address"
                     android:textColor="#000" />
 
                 <EditText
@@ -162,10 +177,10 @@
 
 
                 <TextView
-                    android:padding="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
+                    android:padding="5dp"
                     android:text="Email"
                     android:textColor="#000" />
 
@@ -177,10 +192,10 @@
                     android:hint="" />
 
                 <TextView
-                    android:padding="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
+                    android:padding="5dp"
                     android:text="Phone Number"
                     android:textColor="#000" />
 
@@ -190,9 +205,6 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/black"
                     android:hint="" />
-
-
-
 
 
                 <!--
@@ -213,98 +225,94 @@
                 -->
 
                 <TextView
-                    android:padding="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
+                    android:padding="5dp"
                     android:text="Bank Account Name"
                     android:textColor="#000" />
 
                 <EditText
-                    android:id="@+id/hjdh"
+                    android:id="@+id/account_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/black"
                     android:hint="" />
 
                 <TextView
-                    android:padding="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
+                    android:padding="5dp"
                     android:text="Bank Account Number"
                     android:textColor="#000" />
 
                 <EditText
-                    android:id="@+id/sdress"
+                    android:id="@+id/account_number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/black"
                     android:hint="" />
 
                 <TextView
-                    android:padding="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
+                    android:padding="5dp"
                     android:text="Bank Name"
                     android:textColor="#000" />
 
                 <EditText
-                    android:id="@+id/ssdress"
+                    android:id="@+id/bank_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/black"
                     android:hint="" />
 
                 <TextView
-                    android:padding="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
+                    android:padding="5dp"
                     android:text="BKash Number"
                     android:textColor="#000" />
 
                 <EditText
-                    android:id="@+id/tadess"
+                    android:id="@+id/bkash_number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/black"
                     android:hint="" />
 
                 <TextView
-                    android:padding="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
+                    android:padding="5dp"
                     android:text="Nagad Number"
                     android:textColor="#000" />
 
                 <EditText
-                    android:id="@+id/Nagad"
+                    android:id="@+id/nagad_number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/black"
                     android:hint="" />
 
                 <TextView
-                    android:padding="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
+                    android:padding="5dp"
                     android:text="Rocket Number"
                     android:textColor="#000" />
 
                 <EditText
-                    android:id="@+id/cff"
+                    android:id="@+id/rocket_number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/black"
                     android:hint="" />
-
-
-
-
 
 
             </LinearLayout>

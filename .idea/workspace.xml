@@ -14,13 +14,25 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e639d532-d3ec-493b-9221-9fb87cd81196" name="Default Changelist" comment="" />
+    <list default="true" id="e639d532-d3ec-493b-9221-9fb87cd81196" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_databinding_viewbinding_4_2_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_databinding_viewbinding_4_2_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_github_inflationx_viewpump_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_github_inflationx_viewpump_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Parcelwala.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Parcelwala.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Parcelwala.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Parcelwala.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/stitbd/parcelwala/Activity/UpdateProfileActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/stitbd/parcelwala/Activity/UpdateProfileActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_update_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_update_profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@C:\Users\Humay\.android\avd\Pixel_4_API_30.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[8eb9e19e]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -35,6 +47,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1wQolCj0MOpz3jJCt5SHAgS8Veu" />
@@ -56,7 +73,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/font" />
+    <property name="last_opened_file_path" value="E:/humayun beacon file all code/Beacon_3/Beacon" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -171,63 +188,5 @@
       <updated>1628400323127</updated>
     </task>
     <servers />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="572" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1638181934749">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="488" y="68" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1631948751066" />
-    <state x="572" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1638181934749" />
-    <state x="484" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1638077687168">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1631941498428" />
-    <state x="484" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1638077687168" />
-    <state x="92" y="92" width="1182" height="544" key="AVDManager" timestamp="1629550459030">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="92" y="92" width="1182" height="544" key="AVDManager/0.0.1366.728@0.0.1366.728" timestamp="1629550459030" />
-    <state x="380" y="185" key="AndroidCreateResourceFileDialog" timestamp="1638084140288">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="380" y="185" key="AndroidCreateResourceFileDialog/0.0.1600.860@0.0.1600.860" timestamp="1638084140288" />
-    <state x="542" y="141" key="FileChooserDialogImpl" timestamp="1638184295700">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1632139938994" />
-    <state x="542" y="141" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1638184295700" />
-    <state width="1557" height="275" key="GridCell.Tab.0.bottom" timestamp="1638184129635">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1323" height="164" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1632136001396" />
-    <state width="1557" height="275" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1638184129635" />
-    <state width="1557" height="275" key="GridCell.Tab.0.center" timestamp="1638184129635">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1323" height="164" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1632136001396" />
-    <state width="1557" height="275" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1638184129635" />
-    <state width="1557" height="275" key="GridCell.Tab.0.left" timestamp="1638184129635">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1323" height="164" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1632136001396" />
-    <state width="1557" height="275" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1638184129635" />
-    <state width="1557" height="275" key="GridCell.Tab.0.right" timestamp="1638184129635">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1323" height="164" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1632136001396" />
-    <state width="1557" height="275" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1638184129635" />
-    <state x="301" y="75" key="SettingsEditor" timestamp="1637057136538">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="301" y="75" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1637057136538" />
-    <state x="565" y="167" key="chooseDestDirectoryDialog" timestamp="1638078352681">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="482" y="141" key="chooseDestDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1631942963194" />
-    <state x="565" y="167" key="chooseDestDirectoryDialog/0.0.1600.860@0.0.1600.860" timestamp="1638078352681" />
-    <state x="456" y="195" key="run.anything.popup" timestamp="1637082234882">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="456" y="195" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1637082234882" />
   </component>
 </project>
