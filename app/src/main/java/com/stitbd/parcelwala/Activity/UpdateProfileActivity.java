@@ -152,6 +152,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
                     binding.bkashNumber.setText(merchant.getBkashNumber());
                     binding.nagadNumber.setText(merchant.getNagadNumber());
                     binding.rocketNumber.setText(merchant.getRocketName());
+                    binding.nidNumber.setText(String.valueOf(merchant.getNidNo()));
                 } else {
                     Toast.makeText(UpdateProfileActivity.this, "Something Wrong", Toast.LENGTH_SHORT).show();
                 }
@@ -245,6 +246,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
                 .addFormDataPart("bkash_number", binding.bkashNumber.getText().toString())
                 .addFormDataPart("nagad_number", binding.nagadNumber.getText().toString())
                 .addFormDataPart("rocket_name", binding.rocketNumber.getText().toString())
+                .addFormDataPart("nid_no", binding.nidNumber.getText().toString())
                 .addFormDataPart("fb_url", binding.facebookLink.getText().toString())
                 .addFormDataPart("image", nidpicName, requestNid1 != null ? requestNid1 : attachmentEmpty)
                 .build();
