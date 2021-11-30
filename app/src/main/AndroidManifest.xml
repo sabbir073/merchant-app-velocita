@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.stitbd.parcelwala">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/parcelwala"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/parcelwala_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BeaconStitbd">
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.ReturnParcelActivity"
+            android:theme="@style/Theme.BeaconStitbdone"></activity>
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.PickupParcelListActivity"
+            android:theme="@style/Theme.BeaconStitbdone" />
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.ChangePasswordActivity"
+            android:theme="@style/Theme.BeaconStitbdone" />
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.UpdateProfileActivity"
+            android:theme="@style/Theme.BeaconStitbdone" />
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.PaymentListDetails"
+            android:theme="@style/Theme.BeaconStitbdone" />
+        <activity android:name="com.stitbd.parcelwala.Activity.OtpRegistrationConfirm" />
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.Percel_Details"
+            android:theme="@style/Theme.BeaconStitbdone">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.Total_Collect_Amount"
+            android:theme="@style/Theme.BeaconStitbdone" />
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.Total_Pending_Collect_Amonut"
+            android:theme="@style/Theme.BeaconStitbdone" />
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.Total_Return_Complete_percel"
+            android:theme="@style/Theme.BeaconStitbdone" />
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.Total_Return_Percel"
+            android:theme="@style/Theme.BeaconStitbdone" />
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.Total_Delivery_Complete_Percel"
+            android:theme="@style/Theme.BeaconStitbdone" />
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.Total_Delivery_Percel"
+            android:theme="@style/Theme.BeaconStitbdone" />
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.Waiting_Delivery_Percel"
+            android:theme="@style/Theme.BeaconStitbdone" />
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.Total_WaitingPercel"
+            android:theme="@style/Theme.BeaconStitbdone" />
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.Total_Cancle_Percel"
+            android:theme="@style/Theme.BeaconStitbdone" />
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.Profile_Page"
+            android:theme="@style/Theme.BeaconStitbdone" />
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.Dashboard_Click_Total_Parcel"
+            android:theme="@style/Theme.BeaconStitbdone" />
+        <activity android:name="com.stitbd.parcelwala.Activity.Reset_Password_Page" />
+        <activity android:name="com.stitbd.parcelwala.Activity.OTP_Page" />
+        <activity android:name="com.stitbd.parcelwala.Activity.ForgotPasswordActivity" />
+        <activity android:name="com.stitbd.parcelwala.Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.Track_Parcel"
+            android:theme="@style/Theme.BeaconStitbdone" />
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.Payment_List"
+            android:theme="@style/Theme.BeaconStitbdone" />
+        <activity android:name="com.stitbd.parcelwala.Activity.Dashboard">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity>
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.Delivery_Parcel_list"
+            android:theme="@style/Theme.BeaconStitbdone" />
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.Service_Charge"
+            android:theme="@style/Theme.BeaconStitbdone" />
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.Coverage_Area"
+            android:theme="@style/Theme.BeaconStitbdone" />
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.Order_Tracking"
+            android:theme="@style/Theme.BeaconStitbdone" />
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.Parcel_list_show"
+            android:theme="@style/Theme.BeaconStitbdone" />
+        <activity
+            android:name="com.stitbd.parcelwala.Activity.Add_Parcel"
+            android:theme="@style/Theme.BeaconStitbdone" />
+        <activity android:name="com.stitbd.parcelwala.Activity.Registration_Page" />
+        <activity android:name="com.stitbd.parcelwala.Activity.MainActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+    </application>
+
+</manifest>
