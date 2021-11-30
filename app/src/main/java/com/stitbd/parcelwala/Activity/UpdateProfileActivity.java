@@ -16,13 +16,23 @@ import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Toast;
 
 import com.google.gson.JsonObject;
+import com.stitbd.parcelwala.Adaptar.AreaSpinnerAdapter;
+import com.stitbd.parcelwala.Adaptar.DistrictSpinnerAdaptar;
+import com.stitbd.parcelwala.Adaptar.UpozilaSpinnerAdaptar;
 import com.stitbd.parcelwala.databinding.ActivityAddParcelBinding;
 import com.stitbd.parcelwala.databinding.ActivityUpdateProfileBinding;
+import com.stitbd.parcelwala.model.Area;
+import com.stitbd.parcelwala.model.AreaContainer;
+import com.stitbd.parcelwala.model.District;
+import com.stitbd.parcelwala.model.DistrictsContainer;
 import com.stitbd.parcelwala.model.UpdateProfile.Merchant;
 import com.stitbd.parcelwala.model.UpdateProfile.UserInfoResponse;
+import com.stitbd.parcelwala.model.Upozila;
+import com.stitbd.parcelwala.model.UpozilasContainer;
 import com.stitbd.parcelwala.network.Api;
 import com.stitbd.parcelwala.network.RetrofitClient;
 import com.stitbd.parcelwala.util.Constant;
@@ -32,6 +42,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.List;
 
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
@@ -46,10 +57,13 @@ public class UpdateProfileActivity extends AppCompatActivity {
     ProgressDialog progressDialog;
     ActivityUpdateProfileBinding binding;
     Bitmap bitmap;
-    boolean isNid1 = false;
-    Uri imageUriNid = null;
-    File f1nid;
+    boolean isNid1 = false, isTrade = false, isTin = false, isNid2 = false;
+    Uri imageUriNid = null, imageUriNid2 = null, imageUriTrade = null, imageUriTin = null, imageUriNid3 = null;
+    File f1nid, f2nid, f3trade, f4tin, f5nid;
     Uri uri;
+    List<District> districts;
+    List<Upozila> upozilaList;
+    List<Area> areas;
     private static final int MY_PERMISSIONS_REQUEST_LOCATION = 99;
 
     @Override
@@ -64,7 +78,37 @@ public class UpdateProfileActivity extends AppCompatActivity {
         api = RetrofitClient.get(getApplicationContext()).create(Api.class);
 
         datainitilize();
+        getDistrict();
 
+        binding.districtSp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                Log.e("tesst", String.valueOf(binding.districtSp.getSelectedItemId()));
+                if (binding.districtSp.getSelectedItemId() != 0) {
+                    getUpozila(districts.get(i).getId());
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
+        binding.upozilaSp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                Log.e("tesst", upozilaList.get(i).getName());
+                if (binding.upozilaSp.getSelectedItemId() != 0) {
+                    getAreas(upozilaList.get(i).getId());
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
 
         binding.takeImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,6 +146,13 @@ public class UpdateProfileActivity extends AppCompatActivity {
                     binding.takeBaddress.setText(merchant.getBusinessAddress());
                     binding.takeName.setText(merchant.getName());
                     binding.takePhn.setText(merchant.getContactNumber());
+                    binding.accountName.setText(merchant.getBankAccountName());
+                    binding.accountNumber.setText(merchant.getBankAccountNo());
+                    binding.bankName.setText(merchant.getBankName());
+                    binding.bkashNumber.setText(merchant.getBkashNumber());
+                    binding.nagadNumber.setText(merchant.getNagadNumber());
+                    binding.rocketNumber.setText(merchant.getRocketName());
+                    binding.nidNumber.setText(String.valueOf(merchant.getNidNo()));
                 } else {
                     Toast.makeText(UpdateProfileActivity.this, "Something Wrong", Toast.LENGTH_SHORT).show();
                 }
@@ -115,10 +166,8 @@ public class UpdateProfileActivity extends AppCompatActivity {
             }
         });
 
-
     }
-
-
+    
     private void dataValidation() {
         if (!TextUtils.isEmpty(binding.takeName.getText().toString())) {
             if (!TextUtils.isEmpty(binding.takeEmail.getText().toString())) {
@@ -126,7 +175,16 @@ public class UpdateProfileActivity extends AppCompatActivity {
                     if (!TextUtils.isEmpty(binding.takeCName.getText().toString())) {
                         if (!TextUtils.isEmpty(binding.takeAddress.getText().toString())) {
                             if (!TextUtils.isEmpty(binding.takeBaddress.getText().toString())) {
-                                Upadate();
+                                if (binding.districtSp.getSelectedItemPosition() > 0) {
+                                    if (binding.upozilaSp.getSelectedItemPosition() > 0) {
+                                        Upadate();
+                                    } else {
+                                        Toast.makeText(getApplicationContext(), "Please Select Upazila", Toast.LENGTH_SHORT).show();
+                                    }
+                                } else {
+                                    Toast.makeText(getApplicationContext(), "Please Select a district", Toast.LENGTH_SHORT).show();
+                                }
+
                             } else {
                                 binding.takeBaddress.setError("Please Inpute your address");
                                 binding.takeBaddress.requestFocus();
@@ -178,7 +236,18 @@ public class UpdateProfileActivity extends AppCompatActivity {
                 .addFormDataPart("name", binding.takeName.getText().toString())
                 .addFormDataPart("business_address", binding.takeBaddress.getText().toString())
                 .addFormDataPart("address", binding.takeAddress.getText().toString())
+                .addFormDataPart("district_id", String.valueOf(districts.get(binding.districtSp.getSelectedItemPosition()).getId()))
+                .addFormDataPart("upazila_id", String.valueOf(upozilaList.get(binding.upozilaSp.getSelectedItemPosition()).getId()))
+                .addFormDataPart("area_id", String.valueOf(areas.get(binding.areaSp.getSelectedItemPosition()).getId()))
                 .addFormDataPart("email", binding.takeEmail.getText().toString())
+                .addFormDataPart("bank_account_name", binding.accountName.getText().toString())
+                .addFormDataPart("bank_name", binding.bankName.getText().toString())
+                .addFormDataPart("bank_account_no", binding.accountNumber.getText().toString())
+                .addFormDataPart("bkash_number", binding.bkashNumber.getText().toString())
+                .addFormDataPart("nagad_number", binding.nagadNumber.getText().toString())
+                .addFormDataPart("rocket_name", binding.rocketNumber.getText().toString())
+                .addFormDataPart("nid_no", binding.nidNumber.getText().toString())
+                .addFormDataPart("fb_url", binding.facebookLink.getText().toString())
                 .addFormDataPart("image", nidpicName, requestNid1 != null ? requestNid1 : attachmentEmpty)
                 .build();
 
@@ -245,6 +314,85 @@ public class UpdateProfileActivity extends AppCompatActivity {
             width = (int) (height * bitmapRatio);
         }
         return Bitmap.createScaledBitmap(image, width, height, true);
+    }
+
+
+    private void getDistrict() {
+        progressDialog.show();
+
+        api.getDistricts().enqueue(new Callback<DistrictsContainer>() {
+
+            @Override
+            public void onResponse(Call<DistrictsContainer> call, Response<DistrictsContainer> response) {
+                progressDialog.dismiss();
+                if (response.isSuccessful() && response.body() != null) {
+
+                    districts = response.body().getDistricts();
+                    districts.add(0, new District(0, "District"));
+
+                    DistrictSpinnerAdaptar customeAdapterForSpinner = new DistrictSpinnerAdaptar(districts, getApplicationContext());
+                    binding.districtSp.setAdapter(customeAdapterForSpinner);
+
+
+                }
+            }
+
+            @Override
+            public void onFailure(Call<DistrictsContainer> call, Throwable t) {
+                progressDialog.dismiss();
+            }
+        });
+    }
+
+    private void getUpozila(Integer id) {
+        progressDialog.show();
+        api.getUpazilas(id).enqueue(new Callback<UpozilasContainer>() {
+            @Override
+            public void onResponse(Call<UpozilasContainer> call, Response<UpozilasContainer> response) {
+                progressDialog.dismiss();
+                if (response.isSuccessful() && response.body() != null) {
+                    upozilaList = response.body().getUpozilaList();
+                    upozilaList.add(0, new Upozila(0, "Upazila"));
+                    UpozilaSpinnerAdaptar customeAdapterForSpinner = new UpozilaSpinnerAdaptar(upozilaList, getApplicationContext());
+                    binding.upozilaSp.setAdapter(customeAdapterForSpinner);
+
+                }
+            }
+
+            @Override
+            public void onFailure(Call<UpozilasContainer> call, Throwable t) {
+                progressDialog.dismiss();
+            }
+        });
+    }
+
+    private void getAreas(Integer id) {
+
+        progressDialog.show();
+        api.getAreas(id).enqueue(new Callback<AreaContainer>() {
+            @Override
+            public void onResponse(Call<AreaContainer> call, Response<AreaContainer> response) {
+
+                progressDialog.dismiss();
+
+                if (response.isSuccessful() && response.body() != null) {
+
+                    areas = response.body().getArealist();
+                    areas.add(0, new Area(0, "Area"));
+                    AreaSpinnerAdapter areaSpinnerAdapter = new AreaSpinnerAdapter(areas, getApplicationContext());
+                    binding.areaSp.setAdapter(areaSpinnerAdapter);
+                    areas = response.body().getArealist();
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<AreaContainer> call, Throwable t) {
+
+                progressDialog.dismiss();
+            }
+        });
+
     }
 
     @Override

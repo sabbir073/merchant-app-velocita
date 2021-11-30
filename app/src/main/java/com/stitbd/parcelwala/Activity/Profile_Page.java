@@ -104,7 +104,16 @@ public class Profile_Page extends AppCompatActivity {
                         TextView Cod_charge=findViewById(R.id.cod_percent);
                         ImageView Profile_pic = findViewById(R.id.profile_pic);
                         TextView merchantid=findViewById(R.id.merchant_id_profile);
-                        TextView addres=findViewById(R.id.Address);
+//                        TextView addres=findViewById(R.id.Address);
+                        TextView fb=findViewById(R.id.fburl);
+                        TextView bankname=findViewById(R.id.bankname);
+                        TextView bankaccno=findViewById(R.id.bankaccountnumber);
+                        TextView bankaccname=findViewById(R.id.bankaccountname);
+                        TextView bakash=findViewById(R.id.bkashnumber);
+                        TextView ngad=findViewById(R.id.nagadnumber);
+                        TextView rocket=findViewById(R.id.rocketnumber);
+                        TextView nidnumber=findViewById(R.id.nidnumber);
+
 
 //                        TextView ProfileHead = findViewById(R.id.profile_email_head);
 
@@ -122,7 +131,16 @@ public class Profile_Page extends AppCompatActivity {
                         Profile_address.setText(response.body().getProfilelist().getAddress());
                         merchantid.setText(response.body().getProfilelist().getM_id());
                         Cod_charge.setText(response.body().getCod_charge_percent());
-                        addres.setText(response.body().getProfilelist().getAddress());
+//                        addres.setText(response.body().getProfilelist().getAddress());
+                        fb.setText(response.body().getProfilelist().getFb_url());
+                        bankname.setText(response.body().getProfilelist().getBank_name());
+                        bankaccno.setText(response.body().getProfilelist().getBank_account_no());
+                        bankaccname.setText(response.body().getProfilelist().getBank_account_name());
+                        bakash.setText(response.body().getProfilelist().getBkash_number());
+                        ngad.setText(response.body().getProfilelist().getNagad_number());
+                        rocket.setText(response.body().getProfilelist().getRocket_name());
+                        nidnumber.setText(response.body().getProfilelist().getNid_no());
+
 
                         recyclerView.setHasFixedSize(true);
                         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(),
