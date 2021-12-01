@@ -49,9 +49,6 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-/*import com.skydoves.expandablelayout.ExpandableAnimation;
-import com.skydoves.expandablelayout.ExpandableLayout;*/
-
 
 public class Add_Parcel extends AppCompatActivity {
     ActivityAddParcelBinding binding;
@@ -63,6 +60,10 @@ public class Add_Parcel extends AppCompatActivity {
     Button Submit;
     Toolbar toolbar;
     Api api;
+
+    String weight_input;
+    Double weight_price;
+    Double last_weight_price;
 
     ProgressDialog progressDialog;
     List<District> districts;
@@ -111,6 +112,31 @@ public class Add_Parcel extends AppCompatActivity {
         PickupAddress = findViewById(R.id.pickup_address);
 
 
+
+        binding.weight.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if(!TextUtils.isEmpty(s.toString())){
+                    double weightcharge=(Double.valueOf(s.toString())*weight_price);
+
+                    exWeightCharge.setText(String.valueOf( Math.ceil(weightcharge)));
+                }
+
+
+
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
         Collection_Amount.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -148,8 +174,19 @@ public class Add_Parcel extends AppCompatActivity {
                         WeightPackageRate weightPackage = weightPackageList.get(binding.packageParcelPage.
                                 getSelectedItemPosition());
                         exWeightPackage.setText(weightPackage.getName());
-                        exWeightCharge.setText(String.valueOf(weightPackage.getRate()));
-                        exTotalCharge.setText(String.valueOf(Double.valueOf(weightPackage.getRate())
+
+
+                        weight_input = binding.weight.getText().toString();
+                        weight_price = weightPackage.getRate();
+
+                        last_weight_price = (Double.valueOf(weight_input) * Double.valueOf( weight_price));
+
+
+                       // exWeightCharge.setText(String.valueOf(last_weight_price));
+//                        exWeightCharge.setText(String.valueOf(weightPackage.getRate()));
+
+
+                        exTotalCharge.setText(String.valueOf(Double.valueOf(last_weight_price)
                                 + Double.valueOf(exDeliveryCharge.getText().toString())));
                     } else {
                         exCodCharge.setText("");
@@ -168,7 +205,7 @@ public class Add_Parcel extends AppCompatActivity {
 
         ExpandableLayout expandableLayout
                 = findViewById(R.id.expandable);
-        expandableLayout.setExpandableAnimation(ExpandableAnimation.BOUNCE);
+        expandableLayout.setExpandableAnimation(ExpandableAnimation.ACCELERATE);
         expandableLayout.secondLayout.findViewById(R.id.cod_percent);
         exCodPercent = expandableLayout.secondLayout.findViewById(R.id.cod_percent);
         exCodCharge = expandableLayout.secondLayout.findViewById(R.id.cod_charge);
@@ -214,6 +251,7 @@ public class Add_Parcel extends AppCompatActivity {
                     exWeightPackage.setText("");
                     exWeightCharge.setText(" ");
                     Collection_Amount.setText("");
+                   binding.weight.setText("");
 //                    exDeliveryCharge.setText(String.valueOf(weightPackage.getRate()));
 //                    exTotalCharge.setText(String.valueOf(weightPackage.getRate() * 2) + "৳");
 
@@ -258,8 +296,15 @@ public class Add_Parcel extends AppCompatActivity {
 
                         exWeightPackage.setText(weightPackage.getName());
 
+                        ///////
+//                        weight_input = binding.weight.getText().toString();
+                        weight_price = weightPackage.getRate();
 
-                        exWeightCharge.setText(String.format("%1$,.2f", weightPackage.getRate()));
+                       // last_weight_price = (Double.valueOf(weight_input) *  weight_price);
+
+                      //  exWeightCharge.setText(String.valueOf(last_weight_price));
+                       exWeightCharge.setText(String.format("%1$,.2f", weightPackage.getRate()));
+
 
 //                    exWeightCharge.setText(String.valueOf(we.getRate()));
 //                    exWeightCharge.setText(String.valueOf(weight.getRate()));
@@ -443,7 +488,14 @@ public class Add_Parcel extends AppCompatActivity {
                                     if (binding.packageParcelPage.getSelectedItemPosition() > 0) {
                                         if (binding.paymentMethodParcelPage.getSelectedItemPosition() > 0) {
                                             if (!TextUtils.isEmpty(binding.productDescriptionPercelPage.getText().toString())) {
-                                                addPercel();
+                                                if (!TextUtils.isEmpty(binding.weight.getText().toString())){
+                                                    addPercel();
+                                                }
+                                                else {
+                                                    binding.weight.setError("Please Enter Weight");
+                                                    binding.weight.requestFocus();
+                                                }
+
                                             } else {
                                                 binding.productDescriptionPercelPage.setError("Please Enter product Description ");
                                                 binding.productDescriptionPercelPage.requestFocus();
@@ -513,7 +565,8 @@ public class Add_Parcel extends AppCompatActivity {
                         getId().toString()),
                 String.valueOf(areas.get(binding.areaNameParcelPage.getSelectedItemPosition()).getId().
                         toString()),
-                binding.remarks.getText().toString(), binding.pickupAddressShow.getText().toString()
+                binding.remarks.getText().toString(), binding.pickupAddressShow.getText().toString(),
+                binding.weight.getText().toString()
         ).enqueue(new Callback<JsonObject>() {
             @Override
             public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
