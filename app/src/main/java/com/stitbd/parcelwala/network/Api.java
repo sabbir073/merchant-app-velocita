@@ -135,7 +135,9 @@ public interface Api {
             , @Field("upazila_id") String upazila_id
             , @Field("area_id") String area_id,
                                @Field("parcel_note") String parcel_note,
-                               @Field("pickup_address") String pickup_address);
+                               @Field("pickup_address") String pickup_address,
+                               @Field("weight") String weight
+    );
 
 
     /*   @FormUrlEncoded
@@ -177,7 +179,7 @@ public interface Api {
                                   @Field("contact_number") String contact_number,
                                   @Field("address") String address,
                                   @Field("fb_url") String fb_url
-                                  );
+    );
 
 //    @POST("api/merchant/registration")
 //    Call<RegisterResponse> registration(@Body RequestBody params);

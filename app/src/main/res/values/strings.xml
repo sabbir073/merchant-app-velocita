@@ -8,6 +8,10 @@
         Already have account?<font color='red'>Login</font>
     </string>
 
+    <string name="weight_write">
+        Weight<font color='red'>  * </font>
+    </string>
+
 
     <string name="open">Open</string>
     <string name="close">Close</string>
