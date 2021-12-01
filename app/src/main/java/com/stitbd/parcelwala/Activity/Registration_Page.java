@@ -82,7 +82,7 @@ public class Registration_Page extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 dataValidation();
-                finish();
+            
 
 //                Datainitailization();
 
@@ -110,7 +110,7 @@ public class Registration_Page extends AppCompatActivity {
             public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
                 if (response.isSuccessful() && response.body() != null) {
                     Log.e("yes", response.toString());
-                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), OTP_Page.class);
                     startActivity(intent);
                     finish();
 

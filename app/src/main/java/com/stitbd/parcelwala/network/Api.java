@@ -68,8 +68,8 @@ public interface Api {
     Call<ChargeDeliveryAddPercel> getcharge(@Query("district_id") int id, @Query("merchant_id") String mid);
 
     /////weightpackage
-    @GET("api/getWeightPackage")
-    Call<GetdistrictPackageRate> getcahrges(@Query("weight_package_id") int id, @Query("district_id") int nid);
+//    @GET("api/getWeightPackage")
+//    Call<GetdistrictPackageRate> getcahrges(@Query("weight_package_id") int id, @Query("district_id") int nid);
 
 
     @POST("api/merchant/getParcelList")
@@ -133,10 +133,11 @@ public interface Api {
             , @Field("customer_address") String customer_address
             , @Field("district_id") String district_id
             , @Field("upazila_id") String upazila_id
+
             , @Field("area_id") String area_id,
                                @Field("parcel_note") String parcel_note,
                                @Field("pickup_address") String pickup_address,
-                               @Field("weight") String weight
+                               @Field("weight") String weight, @Field("weight_charge") String weight_charge
     );
 
 

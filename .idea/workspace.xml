@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="yes" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="tesst" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
@@ -18,16 +18,21 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/stitbd/parcelwala/Activity/Add_Parcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/stitbd/parcelwala/Activity/Add_Parcel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/stitbd/parcelwala/Activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/stitbd/parcelwala/Activity/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/stitbd/parcelwala/Activity/OTP_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/stitbd/parcelwala/Activity/OTP_Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/stitbd/parcelwala/Activity/Percel_Details.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/stitbd/parcelwala/Activity/Percel_Details.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/stitbd/parcelwala/Activity/Registration_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/stitbd/parcelwala/Activity/Registration_Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/stitbd/parcelwala/model/GetChargeDelivery/WeightPackageRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/stitbd/parcelwala/model/GetChargeDelivery/WeightPackageRate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/stitbd/parcelwala/network/Api.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/stitbd/parcelwala/network/Api.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_parcel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_parcel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_percel_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_percel_details.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[8eb9e19e]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -196,12 +201,20 @@
       <option name="project" value="LOCAL" />
       <updated>1638275594302</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="sssssss">
+      <created>1638347541295</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1638347541295</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update profile" />
     <MESSAGE value="second commite" />
-    <option name="LAST_COMMIT_MESSAGE" value="second commite" />
+    <MESSAGE value="sssssss" />
+    <option name="LAST_COMMIT_MESSAGE" value="sssssss" />
   </component>
 </project>

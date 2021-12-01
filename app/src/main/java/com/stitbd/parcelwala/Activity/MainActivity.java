@@ -86,9 +86,10 @@ public class MainActivity extends AppCompatActivity {
                                             .putString(Constant.MERCENTID, response.body().getMerchant().getmId()).putString(Constant.BUSINESSADDRESS, response.body().getMerchant().getBusinessAddress() != null ? response.body().getMerchant().getBusinessAddress().toString() : " ").
                                             putString(Constant.ADDRESS, response.body().getMerchant().getAddress()).apply();
                                     startActivity(new Intent(MainActivity.this, Dashboard.class));
-                                    finish();
+
 
                                 } else {
+                                    finish();
                                     progressDialog.dismiss();
                                     Toast.makeText(MainActivity.this, "Something Wrong", Toast.LENGTH_SHORT).show();
                                 }
@@ -137,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
 
                     public void onClick(DialogInterface arg0, int arg1) {
                         MainActivity.super.onBackPressed();
-                        finish();
+                     finishAffinity();
                     }
                 }).create().show();
 

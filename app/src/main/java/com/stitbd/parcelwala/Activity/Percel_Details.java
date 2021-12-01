@@ -59,7 +59,7 @@ public class Percel_Details extends AppCompatActivity {
                             Phone_No = findViewById(R.id.phn_no_details);
                             District_Name = findViewById(R.id.district_name_details);
                             Upazila_Name = findViewById(R.id.upazila_name_details);
-                            Weight_Pckg_Charge = findViewById(R.id.pckg_charge_details);
+//                            Weight_Pckg_Charge = findViewById(R.id.pckg_charge_details);
                             Collect_Amount = findViewById(R.id.collect_amount_details);
                             Cod_Charge = findViewById(R.id.cod_charge_details);
                             Delivery_Charge = findViewById(R.id.delivery_charge_details);
@@ -75,7 +75,7 @@ public class Percel_Details extends AppCompatActivity {
                             Phone_No.setText(response.body().getDetails().getCustomer_contact_number());
                             District_Name.setText(response.body().getDetails().getDistrict_name());
                             Upazila_Name.setText(response.body().getDetails().getUpazila_name());
-                            Weight_Pckg_Charge.setText(response.body().getDetails().getWeight_package_charge());
+//                            Weight_Pckg_Charge.setText(response.body().getDetails().getWeight_package_charge());
                             Collect_Amount.setText(response.body().getDetails().getCollectable_amount());
                             Cod_Charge.setText(response.body().getDetails().getCod_charge());
                             Delivery_Charge.setText(response.body().getDetails().getDelivery_charge());

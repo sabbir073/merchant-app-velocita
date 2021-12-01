@@ -28,7 +28,6 @@ public class OTP_Page extends AppCompatActivity {
     EditText otp;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

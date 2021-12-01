@@ -397,63 +397,62 @@
                     android:background="#A9CBCDCD" />
 
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:orientation="horizontal"
-                    android:weightSum="1">
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="3dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:weightSum="1">-->
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.5">
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="0.5">-->
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:text="Weight Pcg charge"
-                            android:textColor="#000"
-                            android:textSize="16dp"
-                        />
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:padding="5dp"-->
+<!--                            android:text="Weight Pcg charge"-->
+<!--                            android:textColor="#000"-->
+<!--                            android:textSize="16dp"-->
+<!--                        />-->
 
-                    </LinearLayout>
+<!--                    </LinearLayout>-->
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.5"
-                        android:orientation="horizontal">
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="0.5"-->
+<!--                        android:orientation="horizontal">-->
 
-                        <TextView
-                            android:id="@+id/pckg_charge_details"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint="100"
-                            android:padding="5dp"
-                            android:textColor="#000"
-                            android:textSize="16dp" />
+<!--                        <TextView-->
+<!--                            android:id="@+id/pckg_charge_details"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:padding="5dp"-->
+<!--                            android:textColor="#000"-->
+<!--                            android:textSize="16dp" />-->
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="2dp"
-                            android:padding="2dp"
-                            android:text="Tk"
-                            android:textColor="#000"
-                            android:textSize="16dp" />
-
-
-                    </LinearLayout>
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="2dp"-->
+<!--                            android:padding="2dp"-->
+<!--                            android:text="Tk"-->
+<!--                            android:textColor="#000"-->
+<!--                            android:textSize="16dp" />-->
 
 
-                </LinearLayout>
+<!--                    </LinearLayout>-->
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:background="#A9CBCDCD" />
+
+<!--                </LinearLayout>-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="2dp"-->
+<!--                    android:background="#A9CBCDCD" />-->
 
 
                 <LinearLayout
