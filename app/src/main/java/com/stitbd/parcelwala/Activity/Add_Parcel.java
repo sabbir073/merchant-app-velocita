@@ -127,9 +127,6 @@ public class Add_Parcel extends AppCompatActivity {
                     exWeightCharge.setText(String.valueOf( Math.ceil(weightcharge)));
                 }
 
-
-
-
             }
 
             @Override

@@ -28,49 +28,45 @@ public class OTP_Page extends AppCompatActivity {
     EditText otp;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otp_page);
-        submit_otp= findViewById(R.id.submit_otp_page);
-        otp=findViewById(R.id.otp_number_input);
+        submit_otp = findViewById(R.id.submit_otp_page);
+        otp = findViewById(R.id.otp_number_input);
 
-        api= RetrofitClient.noInterceptor().create(Api.class);
-        String phn=getIntent().getStringExtra(Constant.PHONE);
+        api = RetrofitClient.noInterceptor().create(Api.class);
+        String phn = getIntent().getStringExtra(Constant.PHONE);
         submit_otp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (!TextUtils.isEmpty(otp.getText().toString())) {
-                    api.otpCheck(phn,otp.getText().toString()).enqueue(new Callback<JsonObject>() {
+                    api.otpCheck(phn, otp.getText().toString()).enqueue(new Callback<JsonObject>() {
                         @Override
                         public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
-                            if (response.isSuccessful()&& response.body()!=null){
-                                Toast.makeText(OTP_Page.this,"otp match",Toast.LENGTH_LONG).show();
-                                Intent intent=new Intent(OTP_Page.this,Reset_Password_Page.class);
-                                intent.putExtra(Constant.PHONE,phn);
-                                intent.putExtra(Constant.OTPTOKEN,otp.getText().toString());
+                            if (response.isSuccessful() && response.body() != null) {
+                                Toast.makeText(OTP_Page.this, "otp match", Toast.LENGTH_LONG).show();
+                                Intent intent = new Intent(OTP_Page.this, Reset_Password_Page.class);
+                                intent.putExtra(Constant.PHONE, phn);
+                                intent.putExtra(Constant.OTPTOKEN, otp.getText().toString());
                                 startActivity(intent);
                                 finish();
-                            }
-                            else {
-                                Toast.makeText(OTP_Page.this,"otp does not match",Toast.LENGTH_LONG).show();
+                            } else {
+                                Toast.makeText(OTP_Page.this, "otp does not match", Toast.LENGTH_LONG).show();
 
                             }
-                            Log.e("tesst",response.toString());
+                            Log.e("tesst", response.toString());
                         }
 
                         @Override
                         public void onFailure(Call<JsonObject> call, Throwable t) {
-                            Toast.makeText(OTP_Page.this,"Something wrong.....",Toast.LENGTH_LONG).show();
+                            Toast.makeText(OTP_Page.this, "Something wrong.....", Toast.LENGTH_LONG).show();
                         }
                     });
-                }
-                else{
+                } else {
                     otp.setError("please enter otp code");
                     otp.requestFocus();
                 }
-
 
 
             }
