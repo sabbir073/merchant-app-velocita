@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -42,6 +43,7 @@ import com.google.gson.JsonObject;
 import com.skydoves.expandablelayout.ExpandableAnimation;
 import com.skydoves.expandablelayout.ExpandableLayout;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -61,9 +63,13 @@ public class Add_Parcel extends AppCompatActivity {
     Toolbar toolbar;
     Api api;
 
-    String weight_input;
+
     Double weight_price;
     Double last_weight_price;
+    String weight_input;
+
+    Double perkg;
+
 
     ProgressDialog progressDialog;
     List<District> districts;
@@ -112,7 +118,6 @@ public class Add_Parcel extends AppCompatActivity {
         PickupAddress = findViewById(R.id.pickup_address);
 
 
-
         binding.weight.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -121,19 +126,33 @@ public class Add_Parcel extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if(!TextUtils.isEmpty(s.toString())){
-                    double weightcharge=(Double.valueOf(s.toString())*weight_price);
 
-                    exWeightCharge.setText(String.valueOf( Math.ceil(weightcharge)));
+                /*if (!TextUtils.isEmpty(s.toString())) {
+                    double weightcharge = (Double.valueOf(s.toString()) * weight_price);
+
+                    exWeightCharge.setText(String.valueOf(Math.ceil(weightcharge)));
+                    exTotalCharge.setText(String.valueOf(weightcharge
+                            + Double.valueOf(exDeliveryCharge.getText().toString()) +
+                            Double.valueOf(codCharge)));
+                }*/
+
+                if (!TextUtils.isEmpty(s.toString()) && weight_price != null) {
+                    double weightcharge = (Double.valueOf(s.toString()) * perkg)+weight_price;
+                    Log.d("tesst",String.valueOf(weightcharge));
+                    exWeightCharge.setText(String.valueOf(Math.round(weightcharge)));
+                    exTotalCharge.setText(String.valueOf(weightcharge
+                            + Double.valueOf(exDeliveryCharge.getText().toString()) +
+                            Double.valueOf(codCharge)));
                 }
-
             }
+
 
             @Override
             public void afterTextChanged(Editable s) {
 
             }
         });
+
         Collection_Amount.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -146,13 +165,26 @@ public class Add_Parcel extends AppCompatActivity {
                     if (District.getSelectedItemPosition() > 0) {
 
                         if (Package.getSelectedItemPosition() > 0) {
-                            WeightPackageRate weightPackage = weightPackageList.get(Package.getSelectedItemPosition());
-                            codCharge = Double.valueOf(String.valueOf(s)) * cod_percent / 100;
-                            exCodCharge.setText(String.valueOf(codCharge));
+                            if (!TextUtils.isEmpty(binding.weight.getText().toString())) {
+                                WeightPackageRate weightPackage = weightPackageList.get(Package.getSelectedItemPosition());
+                                codCharge = Double.valueOf(String.valueOf(s)) * cod_percent / 100;
+                                exCodCharge.setText(String.valueOf(codCharge));
 
-                            exTotalCharge.setText(String.valueOf(Double.valueOf(weightPackage.getRate())
-                                    + Double.valueOf(exDeliveryCharge.getText().toString()) +
-                                    Double.valueOf(codCharge)));
+
+                                double weightvalu = Double.valueOf(binding.weight.getText().toString());
+                                exTotalCharge.setText(String.valueOf(Double.valueOf((perkg * weightvalu)+weightPackage.getRate())
+                                        + Double.valueOf(exDeliveryCharge.getText().toString()) +
+                                        Double.valueOf(codCharge)));
+                            } else {
+                                WeightPackageRate weightPackage = weightPackageList.get(Package.getSelectedItemPosition());
+                                codCharge = Double.valueOf(String.valueOf(s)) * cod_percent / 100;
+                                exCodCharge.setText(String.valueOf(codCharge));
+
+                                exTotalCharge.setText(String.valueOf(Double.valueOf(weightPackage.getRate())
+                                        + Double.valueOf(exDeliveryCharge.getText().toString()) +
+                                        Double.valueOf(codCharge)));
+                            }
+
                         } else {
 
                             codCharge = Double.valueOf(String.valueOf(s)) * cod_percent / 100;
@@ -167,24 +199,54 @@ public class Add_Parcel extends AppCompatActivity {
 
                 } else {
                     if (Package.getSelectedItemPosition() > 0) {
-                        exCodCharge.setText("");
-                        WeightPackageRate weightPackage = weightPackageList.get(binding.packageParcelPage.
-                                getSelectedItemPosition());
-                        exWeightPackage.setText(weightPackage.getName());
+                        if (!TextUtils.isEmpty(binding.weight.getText().toString())) {
+                            exCodCharge.setText("");
+                            WeightPackageRate weightPackage = weightPackageList.get(binding.packageParcelPage.
+                                    getSelectedItemPosition());
+                            exWeightPackage.setText(weightPackage.getName());
 
 
-                        weight_input = binding.weight.getText().toString();
-                        weight_price = weightPackage.getRate();
+                            double weight_input = Double.valueOf(binding.weight.getText().toString());
+                            weight_price = weightPackage.getRate();
+                            perkg = Double.valueOf(weightPackage.getPerKg());
 
-                        last_weight_price = (Double.valueOf(weight_input) * Double.valueOf( weight_price));
+                           double totalperkg = (weight_input * perkg) + weight_price;
 
 
-                       // exWeightCharge.setText(String.valueOf(last_weight_price));
+                            //  last_weight_price = (Double.valueOf(weight_input) * Double.valueOf( weight_price));
+
+
+                            // exWeightCharge.setText(String.valueOf(last_weight_price));
 //                        exWeightCharge.setText(String.valueOf(weightPackage.getRate()));
 
 
-                        exTotalCharge.setText(String.valueOf(Double.valueOf(last_weight_price)
-                                + Double.valueOf(exDeliveryCharge.getText().toString())));
+                            exTotalCharge.setText(String.valueOf(Double.valueOf(totalperkg)
+                                    + Double.valueOf(exDeliveryCharge.getText().toString())));
+                        } else {
+                            exCodCharge.setText("");
+                            WeightPackageRate weightPackage = weightPackageList.get(binding.packageParcelPage.
+                                    getSelectedItemPosition());
+                            exWeightPackage.setText(weightPackage.getName());
+
+
+                            //double weight_input = Double.valueOf(binding.weight.getText().toString());
+                            double weight_input = Double.valueOf(binding.weight.getText().toString());
+                            weight_price = weightPackage.getRate();
+                           // perkg = Double.valueOf(weightPackage.getPerKg());
+
+
+
+                            //  last_weight_price = (Double.valueOf(weight_input) * Double.valueOf( weight_price));
+
+
+                            // exWeightCharge.setText(String.valueOf(last_weight_price));
+//                        exWeightCharge.setText(String.valueOf(weightPackage.getRate()));
+
+
+                            exTotalCharge.setText(String.valueOf(Double.valueOf(weight_price)
+                                    + Double.valueOf(exDeliveryCharge.getText().toString())));
+                        }
+
                     } else {
                         exCodCharge.setText("");
                     }
@@ -248,7 +310,7 @@ public class Add_Parcel extends AppCompatActivity {
                     exWeightPackage.setText("");
                     exWeightCharge.setText(" ");
                     Collection_Amount.setText("");
-                   binding.weight.setText("");
+                    binding.weight.setText("");
 //                    exDeliveryCharge.setText(String.valueOf(weightPackage.getRate()));
 //                    exTotalCharge.setText(String.valueOf(weightPackage.getRate() * 2) + "৳");
 
@@ -284,8 +346,10 @@ public class Add_Parcel extends AppCompatActivity {
         binding.packageParcelPage.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-
+                binding.weight.setText("");
                 if (binding.packageParcelPage.getSelectedItemPosition() > 0) {
+
+                    binding.weightUnit.setVisibility(View.VISIBLE);
                     if (!TextUtils.isEmpty(exCodCharge.getText().toString())) {
                         WeightPackageRate weightPackage = weightPackageList.get(i);
 
@@ -294,13 +358,17 @@ public class Add_Parcel extends AppCompatActivity {
                         exWeightPackage.setText(weightPackage.getName());
 
                         ///////
-//                        weight_input = binding.weight.getText().toString();
+                        perkg=Double.valueOf(weightPackage.getPerKg());
+                        Log.d("tesst",weightPackage.getPerKg());
+                        // String weight_input = binding.weight.getText().toString();
                         weight_price = weightPackage.getRate();
 
-                       // last_weight_price = (Double.valueOf(weight_input) *  weight_price);
 
-                      //  exWeightCharge.setText(String.valueOf(last_weight_price));
-                       exWeightCharge.setText(String.format("%1$,.2f", weightPackage.getRate()));
+
+                        // last_weight_price = (Double.valueOf(weight_input) *  weight_price);
+
+                        //  exWeightCharge.setText(String.valueOf(last_weight_price));
+                        exWeightCharge.setText(String.format("%1$,.2f", weightPackage.getRate()));
 
 
 //                    exWeightCharge.setText(String.valueOf(we.getRate()));
@@ -308,7 +376,7 @@ public class Add_Parcel extends AppCompatActivity {
 //                    exDeliveryCharge.setText(String.valueOf(weightPackage.getRate()));
 
 
-                        exTotalCharge.setText(String.valueOf(Double.valueOf(weightPackage.getRate())
+                        exTotalCharge.setText(String.valueOf(Double.valueOf(weight_price)
                                 + Double.valueOf(exDeliveryCharge.getText().toString()) +
                                 Double.valueOf(exCodCharge.getText().toString())));
 
@@ -316,8 +384,9 @@ public class Add_Parcel extends AppCompatActivity {
                     } else {
                         WeightPackageRate weightPackage = weightPackageList.get(i);
                         exWeightPackage.setText(weightPackage.getName());
-
-
+                        weight_price = weightPackage.getRate();
+                        perkg=Double.valueOf(weightPackage.getPerKg());
+                        Log.d("tesst",weightPackage.getPerKg());
                         exWeightCharge.setText(String.format("%1$,.2f", weightPackage.getRate()));
 
 
@@ -328,6 +397,7 @@ public class Add_Parcel extends AppCompatActivity {
 
                     }
                 } else {
+                    binding.weightUnit.setVisibility(View.GONE);
                     exWeightPackage.setText("");
                     exWeightCharge.setText("");
                     exTotalCharge.setText("");
@@ -485,10 +555,9 @@ public class Add_Parcel extends AppCompatActivity {
                                     if (binding.packageParcelPage.getSelectedItemPosition() > 0) {
                                         if (binding.paymentMethodParcelPage.getSelectedItemPosition() > 0) {
                                             if (!TextUtils.isEmpty(binding.productDescriptionPercelPage.getText().toString())) {
-                                                if (!TextUtils.isEmpty(binding.weight.getText().toString())){
+                                                if (!TextUtils.isEmpty(binding.weight.getText().toString())) {
                                                     addPercel();
-                                                }
-                                                else {
+                                                } else {
                                                     binding.weight.setError("Please Enter Weight");
                                                     binding.weight.requestFocus();
                                                 }
@@ -563,7 +632,7 @@ public class Add_Parcel extends AppCompatActivity {
                 String.valueOf(areas.get(binding.areaNameParcelPage.getSelectedItemPosition()).getId().
                         toString()),
                 binding.remarks.getText().toString(), binding.pickupAddressShow.getText().toString(),
-                binding.weight.getText().toString()
+                binding.weight.getText().toString(),exWeightCharge.getText().toString()
         ).enqueue(new Callback<JsonObject>() {
             @Override
             public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
@@ -609,6 +678,11 @@ public class Add_Parcel extends AppCompatActivity {
                     myAlertDialog.show();
 
                 } else {
+                    try {
+                        Log.d("tesst",response.errorBody().string());
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                     Toast.makeText(Add_Parcel.this, "Something is worng", Toast.LENGTH_LONG).show();
                 }
 

@@ -17,6 +17,9 @@ public class WeightPackageRate {
     @SerializedName("rate")
     @Expose
     private Double rate;
+    @SerializedName("per_kg")
+    @Expose
+    private String perKg;
 
     public WeightPackageRate(Integer id, String name) {
         this.id = id;
@@ -39,6 +42,13 @@ public class WeightPackageRate {
 
     public void setName(String name) {
         this.name = name;
+    }
+    public String getPerKg() {
+        return perKg;
+    }
+
+    public void setPerKg(String perKg) {
+        this.perKg = perKg;
     }
 
     public String getTitle() {

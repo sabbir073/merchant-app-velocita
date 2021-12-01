@@ -82,7 +82,7 @@ public class Registration_Page extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 dataValidation();
-
+            
 
 //                Datainitailization();
 
@@ -112,7 +112,7 @@ public class Registration_Page extends AppCompatActivity {
                     Log.e("yes", response.toString());
                     Intent intent = new Intent(getApplicationContext(), OTP_Page.class);
                     startActivity(intent);
-
+                    finish();
 
                 } else {
                     try {
