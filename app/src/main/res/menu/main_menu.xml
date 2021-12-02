@@ -23,10 +23,10 @@
             android:icon="@drawable/ic_nav_coverage_area"
             android:title="Coverage Area" />
 
-        <item
-            android:id="@+id/service_charge"
-            android:icon="@drawable/ic_nav_service_charge"
-            android:title="Service Charge" />
+<!--        <item-->
+<!--            android:id="@+id/service_charge"-->
+<!--            android:icon="@drawable/ic_nav_service_charge"-->
+<!--            android:title="Service Charge" />-->
         <item
             android:id="@+id/payment_list"
             android:icon="@drawable/ic_nav_payment_list"

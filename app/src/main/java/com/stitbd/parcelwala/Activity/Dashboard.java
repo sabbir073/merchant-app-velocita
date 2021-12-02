@@ -243,11 +243,11 @@ public class Dashboard extends AppCompatActivity {
                         startActivity(intentthre);
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
-                    case R.id.service_charge:
-                        Intent intentfour = new Intent(getApplicationContext(), Service_Charge.class);
-                        startActivity(intentfour);
-                        drawerLayout.closeDrawer(GravityCompat.START);
-                        break;
+//                    case R.id.service_charge:
+//                        Intent intentfour = new Intent(getApplicationContext(), Service_Charge.class);
+//                        startActivity(intentfour);
+//                        drawerLayout.closeDrawer(GravityCompat.START);
+//                        break;
                     case R.id.payment_list:
                         Intent intentfive = new Intent(getApplicationContext(), Payment_List.class);
                         startActivity(intentfive);
