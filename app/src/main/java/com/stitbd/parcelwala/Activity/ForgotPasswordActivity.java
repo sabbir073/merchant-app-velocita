@@ -17,6 +17,11 @@ import com.stitbd.parcelwala.network.Api;
 import com.stitbd.parcelwala.network.RetrofitClient;
 import com.stitbd.parcelwala.util.Constant;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -46,6 +51,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         progressDialog.setCancelable(false);
 
         sendOtp.setOnClickListener(v -> {
+            progressDialog.show();
             if (!TextUtils.isEmpty(Phn.getText().toString()) && Phn.getText().length() == 11) {
                 Log.d("isMethodCalling", "method calling");
                 api = RetrofitClient.get(getApplicationContext()).create(Api.class);
@@ -55,19 +61,36 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(Call<ForgetPasswordContainer> call, Response<ForgetPasswordContainer> response) {
                         if (response.isSuccessful() && response.body() != null) {
+                            progressDialog.dismiss();
                             Log.d("forgotresponse", response.body().getSuccess() + "");
                             Intent intent = new Intent(ForgotPasswordActivity.this, OTP_Page.class);
                             intent.putExtra(Constant.PHONE, Phn.getText().toString());
                             startActivity(intent);
                             finish();
-                        } else
-                            Toast.makeText(ForgotPasswordActivity.this, "Failed to send OTP", Toast.LENGTH_LONG).show();
+                        }
+                        else {
+                            try {
+                                // Log.e("tesstss", response.errorBody().string());
+                                try {
+                                    JSONObject json = new JSONObject(response.errorBody().string().toString());
+                                    Toast.makeText(ForgotPasswordActivity.this, json.getString("message"), Toast.LENGTH_SHORT).show();
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
+                                // String a=response.errorBody().string().toString();
+
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                            progressDialog.dismiss();
+
+                        }
                     }
 
                     @Override
                     public void onFailure(Call<ForgetPasswordContainer> call, Throwable t) {
                         Log.d("errorResponse", "response is: " + t.getMessage());
-                        Toast.makeText(ForgotPasswordActivity.this, "something wrong......", Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(ForgotPasswordActivity.this, "something wrong......", Toast.LENGTH_SHORT).show();
                     }
 
                 });

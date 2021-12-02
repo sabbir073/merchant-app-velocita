@@ -37,6 +37,9 @@ import com.stitbd.parcelwala.network.Api;
 import com.stitbd.parcelwala.network.RetrofitClient;
 import com.stitbd.parcelwala.util.Constant;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -153,6 +156,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
                     binding.nagadNumber.setText(merchant.getNagadNumber());
                     binding.rocketNumber.setText(merchant.getRocketName());
                     binding.nidNumber.setText(String.valueOf(merchant.getNidNo()));
+                    binding.facebookLink.setText(String.valueOf(merchant.getFbUrl()));
                 } else {
                     Toast.makeText(UpdateProfileActivity.this, "Something Wrong", Toast.LENGTH_SHORT).show();
                 }
@@ -167,7 +171,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
         });
 
     }
-    
+
     private void dataValidation() {
         if (!TextUtils.isEmpty(binding.takeName.getText().toString())) {
             if (!TextUtils.isEmpty(binding.takeEmail.getText().toString())) {
@@ -261,12 +265,22 @@ public class UpdateProfileActivity extends AppCompatActivity {
                     Toast.makeText(UpdateProfileActivity.this, "Update successfully", Toast.LENGTH_SHORT).show();
 
                     finish();
-                } else {
-//                    try {
-//                        Log.e("tesst", response.errorBody().string());
-//                    } catch (IOException e) {
-//                        e.printStackTrace();
-//                    }
+                }  else {
+                    try {
+                        // Log.e("tesstss", response.errorBody().string());
+                        try {
+                            JSONObject json = new JSONObject(response.errorBody().string().toString());
+                            Toast.makeText(UpdateProfileActivity.this, json.getString("message"), Toast.LENGTH_SHORT).show();
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                        // String a=response.errorBody().string().toString();
+
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    progressDialog.dismiss();
+
                 }
             }
 
@@ -441,9 +455,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
                 Log.e("REQ", "Bitmap null");
             }
 
-
         }
-
 
     }
 }

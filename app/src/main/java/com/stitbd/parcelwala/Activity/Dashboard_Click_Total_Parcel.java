@@ -7,6 +7,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.stitbd.parcelwala.Adaptar.PercelListAdapter;
@@ -30,6 +32,7 @@ public class Dashboard_Click_Total_Parcel extends AppCompatActivity {
     RecyclerView recyclerView;
     ProgressDialog progressDialog;
     List<PercelStatus> percelStatusList = new ArrayList<>();
+    LinearLayout v;
 
 
     @Override
@@ -38,6 +41,7 @@ public class Dashboard_Click_Total_Parcel extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard_click_total_parcel);
 
         recyclerView = findViewById(R.id.total_percel_show);
+        v = findViewById(R.id.no_data);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Total Parcel");
@@ -52,6 +56,7 @@ public class Dashboard_Click_Total_Parcel extends AppCompatActivity {
             public void onResponse(Call<PercelContainer> call, Response<PercelContainer> response) {
                 try {
                     if (response.isSuccessful() && response.body() != null) {
+
                         recyclerView.setHasFixedSize(true);
                         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(),
                                 LinearLayoutManager.VERTICAL, false));
@@ -62,12 +67,17 @@ public class Dashboard_Click_Total_Parcel extends AppCompatActivity {
                             }
                         });
                         recyclerView.setAdapter(adapter);
+                        v.setVisibility(View.GONE);
 
-                        Log.e("eorrrr", response.toString());
+                      //  Log.e("eorrrr", response.toString());
+                    } else {
+                        v.setVisibility(View.VISIBLE);
                     }
 
+
                 } catch (Exception e) {
-                    Toast.makeText(Dashboard_Click_Total_Parcel.this, "Something wrong......", Toast.LENGTH_LONG).show();
+
+                    //Toast.makeText(Dashboard_Click_Total_Parcel.this, "Something wrong......", Toast.LENGTH_LONG).show();
                 }
             }
 
@@ -108,8 +118,11 @@ public class Dashboard_Click_Total_Parcel extends AppCompatActivity {
                             }
                         });
                         recyclerView.setAdapter(adapter);
+                        v.setVisibility(View.GONE);
 
                         Log.e("eorrrr", response.toString());
+                    } else {
+                        v.setVisibility(View.VISIBLE);
                     }
 
                 } catch (Exception e) {

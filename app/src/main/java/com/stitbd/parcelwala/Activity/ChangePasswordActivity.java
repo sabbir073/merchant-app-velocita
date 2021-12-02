@@ -18,6 +18,11 @@ import com.stitbd.parcelwala.network.Api;
 import com.stitbd.parcelwala.network.RetrofitClient;
 import com.stitbd.parcelwala.util.MySharedPreference;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -71,8 +76,24 @@ public class ChangePasswordActivity extends AppCompatActivity {
                                 MySharedPreference.editor(getApplicationContext()).clear().commit();
                                 Intent intent = new Intent(ChangePasswordActivity.this, MainActivity.class);
                                 startActivity(intent);
-
                                 Toast.makeText(ChangePasswordActivity.this, "Update Successfully Password", Toast.LENGTH_SHORT).show();
+                            }
+                            else {
+                                try {
+                                    // Log.e("tesstss", response.errorBody().string());
+                                    try {
+                                        JSONObject json = new JSONObject(response.errorBody().string().toString());
+                                        Toast.makeText(ChangePasswordActivity.this, json.getString("message"), Toast.LENGTH_SHORT).show();
+                                    } catch (JSONException e) {
+                                        e.printStackTrace();
+                                    }
+                                    // String a=response.errorBody().string().toString();
+
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                                progressDialog.dismiss();
+
                             }
                         }
 

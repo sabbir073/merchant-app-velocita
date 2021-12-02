@@ -18,6 +18,7 @@ import com.stitbd.parcelwala.model.PercelContainer;
 import com.stitbd.parcelwala.model.PercelDetails.Percel_Details_Container;
 import com.stitbd.parcelwala.model.PercelLog.PercelContainerLog;
 import com.stitbd.parcelwala.model.Profile.ProfileContainer;
+import com.stitbd.parcelwala.model.ProfileContainerOfOTP;
 import com.stitbd.parcelwala.model.RegisterResponse;
 import com.stitbd.parcelwala.model.UpdateProfile.UpdateProContainer;
 import com.stitbd.parcelwala.model.UpdateProfile.UserInfoResponse;
@@ -47,7 +48,10 @@ public interface Api {
 
     @FormUrlEncoded
     @POST("api/merchant/confirmContactNumber")
-    Call<JsonObject> otpCheck(@Field("contact_number") String contact_number, @Field("otp_token") String otp_token);
+    Call<ProfileContainerOfOTP> otpCheck(@Field("contact_number") String contact_number, @Field("otp_token") String otp_token);
+    @FormUrlEncoded
+    @POST("api/merchant/confirmContactNumber")
+    Call<JsonObject> otpChecko(@Field("contact_number") String contact_number, @Field("otp_token") String otp_token);
 
     @FormUrlEncoded
     @POST("api/merchant/confirmForgotPassword")

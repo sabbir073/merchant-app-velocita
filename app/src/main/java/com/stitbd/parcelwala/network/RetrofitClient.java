@@ -14,6 +14,7 @@ public class RetrofitClient  {
     private static Retrofit retrofitWithNoIntercepter = null;
 
     private RetrofitClient() {
+
     }
 
     public static  Retrofit get(Context context) {
