@@ -782,7 +782,7 @@ public class Add_Parcel extends AppCompatActivity {
 //                getString(Constant.BUSINESSADDRESS, "not found");
 
         ArrayList<String> spinnerArray = new ArrayList<String>();
-        spinnerArray.add(0, "--Select Address--");
+        spinnerArray.add(0, "--Pickup Address--");
         spinnerArray.add(1, "Others Address");
         spinnerArray.add(2, "Default Address");
 
