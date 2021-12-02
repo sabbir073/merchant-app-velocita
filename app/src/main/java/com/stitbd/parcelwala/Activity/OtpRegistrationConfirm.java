@@ -73,14 +73,20 @@ public class OtpRegistrationConfirm extends AppCompatActivity {
                                 startActivity(intent);
 
                             } else {
-                                // Log.d("tesst", "dddd");
                                 try {
-                                    Log.d("eroorbody", response.errorBody().string());
+                                    // Log.e("tesstss", response.errorBody().string());
+                                    try {
+                                        progressDialog.dismiss();
+                                        JSONObject json = new JSONObject(response.errorBody().string().toString());
+                                        Toast.makeText(OtpRegistrationConfirm.this, json.getString("message"), Toast.LENGTH_SHORT).show();
+                                    } catch (JSONException e) {
+                                        e.printStackTrace();
+                                    }
+                                    // String a=response.errorBody().string().toString();
+
                                 } catch (IOException e) {
                                     e.printStackTrace();
                                 }
-//
-
 
                             }
                         }

@@ -56,7 +56,7 @@ public class ChangePasswordActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ChangePasswordActivity.this, MainActivity.class);
-                 startActivity(intent);
+                startActivity(intent);
                 datainitialize();
             }
         });
@@ -77,8 +77,7 @@ public class ChangePasswordActivity extends AppCompatActivity {
                                 Intent intent = new Intent(ChangePasswordActivity.this, MainActivity.class);
                                 startActivity(intent);
                                 Toast.makeText(ChangePasswordActivity.this, "Update Successfully Password", Toast.LENGTH_SHORT).show();
-                            }
-                            else {
+                            } else {
                                 try {
                                     // Log.e("tesstss", response.errorBody().string());
                                     try {

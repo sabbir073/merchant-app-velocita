@@ -94,6 +94,7 @@ public class OTP_Page extends AppCompatActivity {
                         }
                     });
                 } else {
+                    progressDialog.dismiss();
                     otp.setError("please enter otp code");
                     otp.requestFocus();
                 }
