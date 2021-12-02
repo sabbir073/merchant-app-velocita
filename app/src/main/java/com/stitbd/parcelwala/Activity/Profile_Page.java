@@ -47,16 +47,16 @@ public class Profile_Page extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.profile_delivery_charge);
         button=findViewById(R.id.update_profile);
-        changepass=findViewById(R.id.changePassword);
+       // changepass=findViewById(R.id.changePassword);
 
 
-        changepass.setOnClickListener(new View.OnClickListener() {
+    /*    changepass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Profile_Page.this,ChangePasswordActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
