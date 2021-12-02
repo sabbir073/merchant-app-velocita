@@ -23,6 +23,11 @@ import com.stitbd.parcelwala.network.RetrofitClient;
 import com.stitbd.parcelwala.util.Constant;
 import com.stitbd.parcelwala.util.MySharedPreference;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -88,10 +93,23 @@ public class MainActivity extends AppCompatActivity {
                                     startActivity(new Intent(MainActivity.this, Dashboard.class));
 
 
-                                } else {
-                                    finish();
+                                }
+                                else {
+                                    try {
+                                        // Log.e("tesstss", response.errorBody().string());
+                                        try {
+                                            JSONObject json = new JSONObject(response.errorBody().string().toString());
+                                            Toast.makeText(MainActivity.this, json.getString("message"), Toast.LENGTH_SHORT).show();
+                                        } catch (JSONException e) {
+                                            e.printStackTrace();
+                                        }
+                                        // String a=response.errorBody().string().toString();
+
+                                    } catch (IOException e) {
+                                        e.printStackTrace();
+                                    }
                                     progressDialog.dismiss();
-                                    Toast.makeText(MainActivity.this, "Something Wrong", Toast.LENGTH_SHORT).show();
+
                                 }
                             }
 
@@ -138,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
 
                     public void onClick(DialogInterface arg0, int arg1) {
                         MainActivity.super.onBackPressed();
-                     finishAffinity();
+                        finishAffinity();
                     }
                 }).create().show();
 

@@ -43,6 +43,9 @@ import com.google.gson.JsonObject;
 import com.skydoves.expandablelayout.ExpandableAnimation;
 import com.skydoves.expandablelayout.ExpandableLayout;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -677,13 +680,22 @@ public class Add_Parcel extends AppCompatActivity {
 
                     myAlertDialog.show();
 
-                } else {
+                }  else {
                     try {
-                        Log.d("tesst",response.errorBody().string());
+                        // Log.e("tesstss", response.errorBody().string());
+                        try {
+                            JSONObject json = new JSONObject(response.errorBody().string().toString());
+                            Toast.makeText(Add_Parcel.this, json.getString("message"), Toast.LENGTH_SHORT).show();
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                        // String a=response.errorBody().string().toString();
+
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
-                    Toast.makeText(Add_Parcel.this, "Something is worng", Toast.LENGTH_LONG).show();
+                    progressDialog.dismiss();
+
                 }
 
             }
@@ -736,6 +748,23 @@ public class Add_Parcel extends AppCompatActivity {
 //                        exWeightCharge=Double.valueOf(response.body().getCharge());
 //                        exWeightCharge.setText(String.valueOf(response.body().));
 //                        getWeightPackages();
+                    }
+                    else {
+                        try {
+                            // Log.e("tesstss", response.errorBody().string());
+                            try {
+                                JSONObject json = new JSONObject(response.errorBody().string().toString());
+                                Toast.makeText(Add_Parcel.this, json.getString("message"), Toast.LENGTH_SHORT).show();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                            // String a=response.errorBody().string().toString();
+
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                        progressDialog.dismiss();
+
                     }
                 }
 

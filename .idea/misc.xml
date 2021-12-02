@@ -4,11 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/shini/AndroidStudioProjects/Parcelwala/app/src/main/res/layout/activity_add_parcel.xml" value="0.22" />
+        <entry key="..\:/Users/shini/AndroidStudioProjects/Parcelwala/app/src/main/res/layout/activity_dashboard_click_total_parcel.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/shini/AndroidStudioProjects/Parcelwala/app/src/main/res/layout/activity_forgot_password.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/shini/AndroidStudioProjects/Parcelwala/app/src/main/res/layout/activity_order_tracking.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/shini/AndroidStudioProjects/Parcelwala/app/src/main/res/layout/activity_otp_page.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/shini/AndroidStudioProjects/Parcelwala/app/src/main/res/layout/activity_otp_registration_confirm.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/shini/AndroidStudioProjects/Parcelwala/app/src/main/res/layout/activity_percel_details.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/shini/AndroidStudioProjects/Parcelwala/app/src/main/res/layout/activity_profile_page.xml" value="0.25" />
+        <entry key="..\:/Users/shini/AndroidStudioProjects/Parcelwala/app/src/main/res/layout/activity_registration_page.xml" value="0.33" />
         <entry key="..\:/Users/shini/AndroidStudioProjects/Parcelwala/app/src/main/res/layout/activity_update_profile.xml" value="0.22" />
         <entry key="..\:/Users/shini/AndroidStudioProjects/Parcelwala/app/src/main/res/layout/expandalble_child_layout.xml" value="0.1984375" />
       </map>

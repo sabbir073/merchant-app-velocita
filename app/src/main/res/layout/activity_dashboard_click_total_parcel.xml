@@ -14,9 +14,23 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/total_percel_show"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
+            android:layout_height="match_parent" />
 
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/no_data">
+
+        </ImageView>
 
     </LinearLayout>
 
