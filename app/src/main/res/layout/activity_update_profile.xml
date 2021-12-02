@@ -54,6 +54,7 @@
 
                 <EditText
                     android:id="@+id/take_cName"
+                    android:editable="false"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/black"
@@ -68,6 +69,7 @@
 
                 <EditText
                     android:id="@+id/take_name"
+                    android:editable="false"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/black"
@@ -165,7 +167,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:padding="5dp"
-                    android:text="Business Address"
+                    android:text="Other Address"
                     android:textColor="#000" />
 
                 <EditText
@@ -201,6 +203,7 @@
 
                 <EditText
                     android:id="@+id/take_phn"
+                    android:editable="false"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/black"
