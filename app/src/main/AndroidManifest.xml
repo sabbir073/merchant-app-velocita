@@ -9,9 +9,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/parcelwala"
+        android:icon="@mipmap/parcelwalamlogo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/parcelwala_round"
+        android:roundIcon="@mipmap/parcelwalamlogo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BeaconStitbd">
         <activity

@@ -79,8 +79,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\Humay\Downloads\percelwala.jpeg" />
-                                                <entry key="scalingPercent" value="81" />
+                                                <entry key="imagePath" value="C:\Users\Humay\Downloads\parcelwalamlogo.png" />
+                                                <entry key="scalingPercent" value="53" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -113,8 +113,8 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="f4f5f5" />
-                                      <entry key="outputName" value="parcelwala" />
+                                      <entry key="backgroundColor" value="f27021" />
+                                      <entry key="outputName" value="parcelwalamlogo" />
                                     </map>
                                   </option>
                                 </PersistentState>
