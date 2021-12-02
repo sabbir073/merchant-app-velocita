@@ -728,7 +728,7 @@ public class Add_Parcel extends AppCompatActivity {
                         cod_percent = Double.valueOf(response.body().getCodChargePercent());
                         weightPackageList = response.body().getWeightlist();
 //                        Log.e("error parcel",response.body().getWeightlist().get(0).getName());
-                        weightPackageList.add(0, new WeightPackageRate(0, "WeightPackage"));
+                        weightPackageList.add(0, new WeightPackageRate(0, "Delivery Package"));
 
                         Weightpackagespinner customeAdapterForSpinner = new Weightpackagespinner(weightPackageList,
                                 getApplicationContext());
@@ -752,9 +752,9 @@ public class Add_Parcel extends AppCompatActivity {
 //                getString(Constant.BUSINESSADDRESS, "not found");
 
         ArrayList<String> spinnerArray = new ArrayList<String>();
-        spinnerArray.add(0, "----Select----");
-        spinnerArray.add(1, "Business Address");
-        spinnerArray.add(2, "Full Address");
+        spinnerArray.add(0, "--Select Address--");
+        spinnerArray.add(1, "Others Address");
+        spinnerArray.add(2, "Default Address");
 
 
         ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, spinnerArray);
