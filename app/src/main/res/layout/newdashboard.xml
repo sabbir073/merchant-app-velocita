@@ -435,7 +435,7 @@
                                     android:layout_width="42dp"
                                     android:layout_height="42dp"
                                     android:layout_gravity="center"
-                                    android:src="@drawable/totaldelivery1" />
+                                    android:src="@drawable/deliverycomplete1" />
 
                                 <TextView
 
@@ -443,7 +443,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_margin="5dp"
                                     android:gravity="center_horizontal"
-                                    android:text="Total Delivery"
+                                    android:text="Delivery Complete"
                                     android:textAlignment="center"
                                     android:textColor="@color/black"
                                     android:textSize="13sp"
@@ -577,7 +577,7 @@
                                     android:layout_width="42dp"
                                     android:layout_height="42dp"
                                     android:layout_gravity="center"
-                                    android:src="@drawable/deliverycomplete1" />
+                                    android:src="@drawable/totaldelivery1" />
 
                                 <TextView
 
@@ -585,7 +585,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_margin="5dp"
                                     android:gravity="center_horizontal"
-                                    android:text="Delivery Complete"
+                                    android:text="Payment Complete"
                                     android:textAlignment="center"
                                     android:textColor="@color/black"
                                     android:textSize="13sp"
