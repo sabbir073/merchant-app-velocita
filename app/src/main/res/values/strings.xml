@@ -4,6 +4,7 @@
     <string name="forgot">Forgot password ?</string>
     <string name="create_account">No account yet? create account</string>
     <string name="registration">Registration</string>
+    <string name="Login">Enter Your Email or Phone Number</string>
     <string name="already_have_account">
         Already have account?<font color='red'>Login</font>
     </string>

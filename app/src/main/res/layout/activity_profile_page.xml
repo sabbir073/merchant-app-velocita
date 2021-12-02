@@ -888,32 +888,32 @@
 
             </LinearLayout>
 
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_gravity="center"-->
-<!--                android:layout_marginTop="20dp"-->
-<!--                android:gravity="center">-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
 
-<!--                <LinearLayout-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:background="@drawable/bg_input_field"-->
-<!--                    android:gravity="center">-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_input_field"
+                    android:gravity="center">
 
-<!--                    <TextView-->
-<!--                        android:id="@+id/changePassword"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:padding="5dp"-->
-<!--                        android:text="Change Your Password"-->
-<!--                        android:textColor="#000"-->
-<!--                        android:textSize="16sp" />-->
+                    <TextView
+                        android:id="@+id/changePassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Change Your Password"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
 
 
-<!--                </LinearLayout>-->
+                </LinearLayout>
 
-<!--            </LinearLayout>-->
+            </LinearLayout>
 
 
         </LinearLayout>
