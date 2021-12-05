@@ -10,7 +10,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.stitbd.parcelwala"
+        applicationId "com.xubisoft.parcelwala"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
@@ -63,6 +63,7 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
     implementation 'io.github.inflationx:calligraphy3:3.1.1'// custom font library
+    implementation 'io.github.muddz:styleabletoast:2.4.0'
 
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
 }
