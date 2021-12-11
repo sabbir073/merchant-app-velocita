@@ -102,7 +102,6 @@ public class Registration_Page extends AppCompatActivity {
                                     .text(json.getString("error"))
                                     .textColor(Color.WHITE)
                                     .cornerRadius(90)
-                                    .iconStart(R.drawable.ic_arrow_down)
                                     .backgroundColor(Color.RED)
                                     .show();
 

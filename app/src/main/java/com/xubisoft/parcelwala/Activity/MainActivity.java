@@ -110,7 +110,6 @@ public class MainActivity extends AppCompatActivity {
                                                     .text(json.getString("message"))
                                                     .textColor(Color.WHITE)
                                                     .cornerRadius(90)
-                                                    .iconStart(R.drawable.ic_arrow_down)
                                                     .backgroundColor(Color.RED)
                                                     .show();
 

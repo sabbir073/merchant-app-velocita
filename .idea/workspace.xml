@@ -32,7 +32,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e639d532-d3ec-493b-9221-9fb87cd81196" name="Default Changelist" comment="new Update" />
+    <list default="true" id="e639d532-d3ec-493b-9221-9fb87cd81196" name="Default Changelist" comment="new Update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Registration_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Registration_Page.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,8 +58,9 @@
   </component>
   <component name="GenerateSignedApkSettings">
     <option name="EXPORT_PRIVATE_KEY" value="false" />
-    <option name="KEY_STORE_PATH" value="E:\Android App by Nazmul\APP FOR PLAY STORE\parcelwala\parcelwala.jks" />
+    <option name="KEY_STORE_PATH" value="E:\Android App by Nazmul\APP FOR PLAY STORE\xubisoft\parcelwala\parcelwala.jks" />
     <option name="KEY_ALIAS" value="key0" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
   <component name="Git.Pull.Settings">
     <option name="BRANCH" value="nazmul" />
@@ -90,7 +95,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Parcelwala Rider" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -267,7 +272,21 @@
       <option name="project" value="LOCAL" />
       <updated>1638702157328</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="new Update">
+      <created>1638703375733</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1638703375733</updated>
+    </task>
+    <task id="LOCAL-00011" summary="new Update">
+      <created>1638703390810</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1638703390810</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -300,10 +319,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="92" y="92" width="1416" height="676" key="AVDManager/0.0.1600.860@0.0.1600.860" timestamp="1638702873598" />
-    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1638679288090">
+    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1638708047104">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1638679288090" />
+    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1638708047104" />
     <state width="1557" height="49" key="GridCell.Tab.0.bottom" timestamp="1638449736247">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -320,9 +339,9 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1557" height="49" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1638449736247" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1638702204774">
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1638703398937">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1638702204774" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1638703398937" />
   </component>
 </project>
