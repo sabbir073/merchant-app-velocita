@@ -5,129 +5,277 @@
       <config />
     </shared>
   </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="eroorbody" />
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
-  </component>
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="NONE" />
-  </component>
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
+    <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e639d532-d3ec-493b-9221-9fb87cd81196" name="Default Changelist" comment="new Update">
+    <list default="true" id="5f45194d-14fc-47cc-9a40-cd041573c63d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/xubis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/Add_Parcel_Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_2_4_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_experimental_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_2_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_3_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_2_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_3_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_common_2_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_2_0_4_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_solver_2_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_3_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_5_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_databinding_viewbinding_4_2_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_dynamicanimation_dynamicanimation_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_exifinterface_exifinterface_1_2_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_3_6_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_v4_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_3_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_3_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_3_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_savedstate_2_3_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_media_media_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_3_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_3_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_3_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_3_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_3_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_2_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_airbnb_android_lottie_3_4_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_annotations_4_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_disklrucache_4_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_12_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_12_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_skydoves_expandablelayout_1_0_7_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_3_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jaredrummler_material_spinner_1_3_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_14_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_17_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_gson_2_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_3_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_github_inflationx_calligraphy3_3_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_github_inflationx_viewpump_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_github_muddz_styleabletoast_2_4_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_4_32.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_4_32.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Parcelwala.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Parcelwala.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Parcelwala.app.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Registration_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Registration_Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/xubisoft/parcelwala/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/velocita/parcelwalamerchant/ExampleInstrumentedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Add_Parcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/Add_Parcel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/ChangePasswordActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/ChangePasswordActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Coverage_Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/Coverage_Area.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Dashboard_Click_Total_Parcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/Dashboard_Click_Total_Parcel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Delivery_Parcel_list.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/Delivery_Parcel_list.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/ForgotPasswordActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/ForgotPasswordActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/MyAlertDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/MyAlertDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/OTP_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/OTP_Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Order_Tracking.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/Order_Tracking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/OtpRegistrationConfirm.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/OtpRegistrationConfirm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Parcel_list_show.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/Parcel_list_show.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/PaymentListDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/PaymentListDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Payment_List.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/Payment_List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Percel_Details.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/Percel_Details.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/PickupParcelListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/PickupParcelListActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Profile_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/Profile_Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Registration_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/Registration_Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Reset_Password_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/Reset_Password_Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/ReturnParcelActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/ReturnParcelActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Service_Charge.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/Service_Charge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/SplashActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Total_Cancle_Percel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/Total_Cancle_Percel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Total_Collect_Amount.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/Total_Collect_Amount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Total_Delivery_Complete_Percel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/Total_Delivery_Complete_Percel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Total_Delivery_Percel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/Total_Delivery_Percel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Total_Pending_Collect_Amonut.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/Total_Pending_Collect_Amonut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Total_Return_Complete_percel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/Total_Return_Complete_percel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Total_Return_Percel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/Total_Return_Percel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Total_WaitingPercel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/Total_WaitingPercel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Track_Parcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/Track_Parcel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/UpdateProfileActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/UpdateProfileActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Activity/Waiting_Delivery_Percel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Activity/Waiting_Delivery_Percel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Adaptar/Adapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Adaptar/Adapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Adaptar/AddpercelWeightpackage/Weightpackagespinner.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Adaptar/AddpercelWeightpackage/Weightpackagespinner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Adaptar/AddressAdaptar/ParcelAddressAdaptar.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Adaptar/AddressAdaptar/ParcelAddressAdaptar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Adaptar/AreaSpinnerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Adaptar/AreaSpinnerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Adaptar/CanclePercel/CancleParcelAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Adaptar/CanclePercel/CancleParcelAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Adaptar/CoverageArea/CoverageAdaptar.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Adaptar/CoverageArea/CoverageAdaptar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Adaptar/DelivaryOptionSpinner.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Adaptar/DelivaryOptionSpinner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Adaptar/DeliveryList/DeliveryAdaptar.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Adaptar/DeliveryList/DeliveryAdaptar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Adaptar/DistrictSpinnerAdaptar.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Adaptar/DistrictSpinnerAdaptar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Adaptar/PakcagesSpinnerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Adaptar/PakcagesSpinnerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Adaptar/Payment/PaymentAdaptar.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Adaptar/Payment/PaymentAdaptar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Adaptar/PaymentListDetails/PaymentDetailsAdaptar.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Adaptar/PaymentListDetails/PaymentDetailsAdaptar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Adaptar/PercelListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Adaptar/PercelListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Adaptar/PercelLogAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Adaptar/PercelLogAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Adaptar/PercelStatusSpinnerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Adaptar/PercelStatusSpinnerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Adaptar/Profile/ProfileAdaptar.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Adaptar/Profile/ProfileAdaptar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Adaptar/ServiceCharge/Service_Charge_Adaptar.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Adaptar/ServiceCharge/Service_Charge_Adaptar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Adaptar/UpozilaSpinnerAdaptar.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Adaptar/UpozilaSpinnerAdaptar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Adaptar/WeightPackageSpinnerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Adaptar/WeightPackageSpinnerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Adaptar/listener/Clicklistener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Adaptar/listener/Clicklistener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/Adaptar/listener/PercelMenuClickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/Adaptar/listener/PercelMenuClickListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/Add_Parcel_Page.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/Area.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/AreaContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/AreaContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/Coverage/Coverage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/Coverage/Coverage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/Coverage/CoverageContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/Coverage/CoverageContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/DashBoardClick/DashBoardClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/DashBoardClick/DashBoardClick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/DashBoardClick/DashboardClickContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/DashBoardClick/DashboardClickContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/DashBoardData.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/DashBoardData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/DashBoardHelperModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/DashBoardHelperModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/DashBordDataContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/DashBordDataContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/DeliveryOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/DeliveryOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/DeliveryPercelList/DeliveryListContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/DeliveryPercelList/DeliveryListContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/DeliveryPercelList/DeliveryPercelList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/DeliveryPercelList/DeliveryPercelList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/District.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/District.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/DistrictsContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/DistrictsContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/ExtraClass/GetdistrictPackageRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/ExtraClass/GetdistrictPackageRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/ForgotPassword/ForgetPasswordContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/ForgotPassword/ForgetPasswordContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/ForgotPassword/Forgot_Password.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/ForgotPassword/Forgot_Password.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/GetChargeDelivery/ChargeDeliveryAddPercel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/GetChargeDelivery/ChargeDeliveryAddPercel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/GetChargeDelivery/ChargeDeliveryParcelContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/GetChargeDelivery/ChargeDeliveryParcelContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/GetChargeDelivery/WeightPackageRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/GetChargeDelivery/WeightPackageRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/GetWeightPackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/GetWeightPackage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/GetWeightPackageContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/GetWeightPackageContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/HoldParcel/HoldParcelModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/HoldParcel/HoldParcelModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/Login/LoginContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/Login/LoginContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/Login/MerchantL.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/Login/MerchantL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/Login/ServiceAreaCharge.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/Login/ServiceAreaCharge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/Login_model_calss.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/Login_model_calss.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/Payment/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/Payment/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/Payment/PaymentContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/Payment/PaymentContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/PaymentListDetails/DeliveryPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/PaymentListDetails/DeliveryPayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/PaymentListDetails/DeliveryPaymentDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/PaymentListDetails/DeliveryPaymentDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/PaymentListDetails/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/PaymentListDetails/Example.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/Percel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/Percel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/PercelContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/PercelContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/PercelDetails/Percel_Details.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/PercelDetails/Percel_Details.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/PercelDetails/Percel_Details_Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/PercelDetails/Percel_Details_Container.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/PercelLog/PercelContainerLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/PercelLog/PercelContainerLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/PercelLog/PercelInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/PercelLog/PercelInformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/PercelLog/PercelLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/PercelLog/PercelLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/PercelStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/PercelStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/Profile/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/Profile/Profile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/Profile/ProfileContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/Profile/ProfileContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/Profile/ServiceCharge.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/Profile/ServiceCharge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/ProfileContainerOfOTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/ProfileContainerOfOTP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/RegisterResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/RegisterResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/Registration_data_model_class.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/Registration_data_model_class.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/UpdateProfile/Merchant.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/UpdateProfile/Merchant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/UpdateProfile/UpdateProContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/UpdateProfile/UpdateProContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/UpdateProfile/UserInfoResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/UpdateProfile/UserInfoResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/Upozila.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/Upozila.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/UpozilasContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/UpozilasContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/WeightPackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/WeightPackage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/model/WeightPackageContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/model/WeightPackageContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/network/Api.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/network/Api.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/network/QueryParameterInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/network/QueryParameterInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/network/RetrofitClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/network/RetrofitClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/util/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/util/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/util/MyAlertDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/util/MyAlertDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/xubisoft/parcelwala/util/MySharedPreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/velocita/parcelwalamerchant/util/MySharedPreference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/xubisoft/parcelwala/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/velocita/parcelwalamerchant/ExampleUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@C:\Users\Humay\.android\avd\Pixel_4_API_30.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\xubis\.android\avd\Pixel_2_API_30.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="resourceFile" />
-        <option value="Class" />
-      </list>
-    </option>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="GenerateSignedApkSettings">
     <option name="EXPORT_PRIVATE_KEY" value="false" />
-    <option name="KEY_STORE_PATH" value="E:\Android App by Nazmul\APP FOR PLAY STORE\xubisoft\parcelwala\parcelwala.jks" />
+    <option name="KEY_STORE_PATH" value="D:\parcelwala app\parcelwalamerchant.jks" />
     <option name="KEY_ALIAS" value="key0" />
-    <option name="REMEMBER_PASSWORDS" value="true" />
-  </component>
-  <component name="Git.Pull.Settings">
-    <option name="BRANCH" value="nazmul" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1wQolCj0MOpz3jJCt5SHAgS8Veu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="BundleExportedModule" value="Parcelwala.app" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="SerialNumber@RFCNA0PR3RM" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-12-02T10:53:19.474366600Z" />
-    <property name="ExportApk.ApkPath" value="E:\Android App by Nazmul\New folder\Parcelwala\Parcelwala\app" />
+    <property name="ExportApk.ApkPath" value="D:\Parcelwala\app" />
     <property name="ExportApk.BuildVariants" value="release" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="android-custom-viewC:/Users/shini/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.2.0/13e8ff89631c2e101eb6bddd12c2fb4bbd74b15d/appcompat-1.2.0-sources.jar!/androidx/appcompat/widget/AppCompatEditText.java_SELECTED" value="AppCompatEditText" />
-    <property name="android-custom-viewC:/Users/shini/.gradle/caches/modules-2/files-2.1/com.github.skydoves/expandablelayout/1.0.7/65009ecded3a87479432626d1da3fb581cec9e74/expandablelayout-1.0.7-sources.jar!/com/skydoves/expandablelayout/ExpandableLayout.kt_SELECTED" value="ExpandableLayout" />
-    <property name="android-custom-viewC:/Users/shini/AppData/Local/Android/Sdk/sources/android-30/android/widget/AdapterView.java_SELECTED" value="AdapterView" />
-    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.17" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
-    <property name="show.migrate.to.gradle.popup" value="false" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Android App by Nazmul\New folder\Parcelwala\Parcelwala\app\src\main\res\font" />
-    </key>
-    <key name="android.template.918088807">
-      <recent name="com.stitbd.beacon.Activity" />
-    </key>
-    <key name="android.template.1750157607">
-      <recent name="com.stitbd.beacon.Activity" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\shini\AndroidStudioProjects\Parcelwala\app\src\main\res\drawable" />
-      <recent name="E:\Android App by Nazmul\New folder\Parcelwala\Parcelwala\app\src\main\res\font" />
-      <recent name="E:\Android App by Nazmul\New folder\Parcelwala\Parcelwala\app\src\main\res\drawable" />
-      <recent name="E:\Android App by Nazmul\New folder\Parcelwala\Parcelwala\app\src\main\res\values" />
-      <recent name="E:\Android App by Nazmul\New folder\Parcelwala\Parcelwala\app\src\main\res\layout" />
-    </key>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../parcelwala app" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="Parcelwala.app" />
       <option name="DEPLOY" value="true" />
@@ -186,162 +334,11 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="BeaconStitbd" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="e639d532-d3ec-493b-9221-9fb87cd81196" name="Default Changelist" comment="" />
-      <created>1628400323127</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1628400323127</updated>
-    </task>
-    <task id="LOCAL-00001" summary="update profile">
-      <created>1638274542405</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1638274542406</updated>
-    </task>
-    <task id="LOCAL-00002" summary="second commite">
-      <created>1638275594302</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1638275594302</updated>
-    </task>
-    <task id="LOCAL-00003" summary="sssssss">
-      <created>1638347541295</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1638347541295</updated>
-    </task>
-    <task id="LOCAL-00004" summary="sssssss">
-      <created>1638364071632</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1638364071632</updated>
-    </task>
-    <task id="LOCAL-00005" summary="new">
-      <created>1638434242357</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1638434242357</updated>
-    </task>
-    <task id="LOCAL-00006" summary="newdf">
-      <created>1638436803915</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1638436803915</updated>
-    </task>
-    <task id="LOCAL-00007" summary="new Update">
-      <created>1638444562981</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1638444562981</updated>
-    </task>
-    <task id="LOCAL-00008" summary="new Update">
-      <created>1638451859693</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1638451859693</updated>
-    </task>
-    <task id="LOCAL-00009" summary="new Update">
-      <created>1638702157328</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1638702157328</updated>
-    </task>
-    <task id="LOCAL-00010" summary="new Update">
-      <created>1638703375733</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1638703375733</updated>
-    </task>
-    <task id="LOCAL-00011" summary="new Update">
-      <created>1638703390810</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1638703390810</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="update profile" />
-    <MESSAGE value="second commite" />
-    <MESSAGE value="sssssss" />
-    <MESSAGE value="new" />
-    <MESSAGE value="newdf" />
-    <MESSAGE value="new Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="new Update" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="317" y="176" key="#PSD" timestamp="1638701829455">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="317" y="176" key="#PSD/0.0.1600.860@0.0.1600.860" timestamp="1638701829455" />
-    <state x="92" y="92" width="1416" height="676" key="AVDManager" timestamp="1638702873598">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="92" y="92" width="1416" height="676" key="AVDManager/0.0.1600.860@0.0.1600.860" timestamp="1638702873598" />
-    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1638708047104">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1638708047104" />
-    <state width="1557" height="49" key="GridCell.Tab.0.bottom" timestamp="1638449736247">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1557" height="49" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1638449736247" />
-    <state width="1557" height="49" key="GridCell.Tab.0.center" timestamp="1638449736247">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1557" height="49" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1638449736247" />
-    <state width="1557" height="49" key="GridCell.Tab.0.left" timestamp="1638449736247">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1557" height="49" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1638449736247" />
-    <state width="1557" height="49" key="GridCell.Tab.0.right" timestamp="1638449736247">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1557" height="49" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1638449736247" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1638703398937">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1638703398937" />
   </component>
 </project>

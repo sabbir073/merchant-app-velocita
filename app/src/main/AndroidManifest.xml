@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.xubisoft.parcelwala">
+    package="com.velocita.parcelwalamerchant">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -15,23 +15,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BeaconStitbd">
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.ReturnParcelActivity"
+            android:name="com.velocita.parcelwalamerchant.Activity.ReturnParcelActivity"
             android:theme="@style/Theme.BeaconStitbdone"></activity>
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.PickupParcelListActivity"
+            android:name="com.velocita.parcelwalamerchant.Activity.PickupParcelListActivity"
             android:theme="@style/Theme.BeaconStitbdone" />
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.ChangePasswordActivity"
+            android:name="com.velocita.parcelwalamerchant.Activity.ChangePasswordActivity"
             android:theme="@style/Theme.BeaconStitbdone" />
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.UpdateProfileActivity"
+            android:name="com.velocita.parcelwalamerchant.Activity.UpdateProfileActivity"
             android:theme="@style/Theme.BeaconStitbdone" />
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.PaymentListDetails"
+            android:name="com.velocita.parcelwalamerchant.Activity.PaymentListDetails"
             android:theme="@style/Theme.BeaconStitbdone" />
-        <activity android:name="com.xubisoft.parcelwala.Activity.OtpRegistrationConfirm" />
+        <activity android:name="com.velocita.parcelwalamerchant.Activity.OtpRegistrationConfirm" />
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.Percel_Details"
+            android:name="com.velocita.parcelwalamerchant.Activity.Percel_Details"
             android:theme="@style/Theme.BeaconStitbdone">
 
             <!-- <intent-filter> -->
@@ -40,42 +40,44 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.Total_Collect_Amount"
+            android:name="com.velocita.parcelwalamerchant.Activity.Total_Collect_Amount"
             android:theme="@style/Theme.BeaconStitbdone" />
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.Total_Pending_Collect_Amonut"
+            android:name="com.velocita.parcelwalamerchant.Activity.Total_Pending_Collect_Amonut"
             android:theme="@style/Theme.BeaconStitbdone" />
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.Total_Return_Complete_percel"
+            android:name="com.velocita.parcelwalamerchant.Activity.Total_Return_Complete_percel"
             android:theme="@style/Theme.BeaconStitbdone" />
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.Total_Return_Percel"
+            android:name="com.velocita.parcelwalamerchant.Activity.Total_Return_Percel"
             android:theme="@style/Theme.BeaconStitbdone" />
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.Total_Delivery_Complete_Percel"
+            android:name="com.velocita.parcelwalamerchant.Activity.Total_Delivery_Complete_Percel"
             android:theme="@style/Theme.BeaconStitbdone" />
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.Total_Delivery_Percel"
+            android:name="com.velocita.parcelwalamerchant.Activity.Total_Delivery_Percel"
             android:theme="@style/Theme.BeaconStitbdone" />
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.Waiting_Delivery_Percel"
+            android:name="com.velocita.parcelwalamerchant.Activity.Waiting_Delivery_Percel"
             android:theme="@style/Theme.BeaconStitbdone" />
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.Total_WaitingPercel"
+            android:name="com.velocita.parcelwalamerchant.Activity.Total_WaitingPercel"
             android:theme="@style/Theme.BeaconStitbdone" />
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.Total_Cancle_Percel"
+            android:name="com.velocita.parcelwalamerchant.Activity.Total_Cancle_Percel"
             android:theme="@style/Theme.BeaconStitbdone" />
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.Profile_Page"
+            android:name="com.velocita.parcelwalamerchant.Activity.Profile_Page"
             android:theme="@style/Theme.BeaconStitbdone" />
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.Dashboard_Click_Total_Parcel"
+            android:name="com.velocita.parcelwalamerchant.Activity.Dashboard_Click_Total_Parcel"
             android:theme="@style/Theme.BeaconStitbdone" />
-        <activity android:name="com.xubisoft.parcelwala.Activity.Reset_Password_Page" />
-        <activity android:name="com.xubisoft.parcelwala.Activity.OTP_Page" />
-        <activity android:name="com.xubisoft.parcelwala.Activity.ForgotPasswordActivity" />
-        <activity android:name="com.xubisoft.parcelwala.Activity.SplashActivity">
+        <activity android:name="com.velocita.parcelwalamerchant.Activity.Reset_Password_Page" />
+        <activity android:name="com.velocita.parcelwalamerchant.Activity.OTP_Page" />
+        <activity android:name="com.velocita.parcelwalamerchant.Activity.ForgotPasswordActivity" />
+        <activity
+            android:name="com.velocita.parcelwalamerchant.Activity.SplashActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -83,12 +85,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.Track_Parcel"
+            android:name="com.velocita.parcelwalamerchant.Activity.Track_Parcel"
             android:theme="@style/Theme.BeaconStitbdone" />
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.Payment_List"
+            android:name="com.velocita.parcelwalamerchant.Activity.Payment_List"
             android:theme="@style/Theme.BeaconStitbdone" />
-        <activity android:name="com.xubisoft.parcelwala.Activity.Dashboard">
+        <activity android:name="com.velocita.parcelwalamerchant.Activity.Dashboard">
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -97,25 +99,25 @@
 
         </activity>
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.Delivery_Parcel_list"
+            android:name="com.velocita.parcelwalamerchant.Activity.Delivery_Parcel_list"
             android:theme="@style/Theme.BeaconStitbdone" />
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.Service_Charge"
+            android:name="com.velocita.parcelwalamerchant.Activity.Service_Charge"
             android:theme="@style/Theme.BeaconStitbdone" />
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.Coverage_Area"
+            android:name="com.velocita.parcelwalamerchant.Activity.Coverage_Area"
             android:theme="@style/Theme.BeaconStitbdone" />
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.Order_Tracking"
+            android:name="com.velocita.parcelwalamerchant.Activity.Order_Tracking"
             android:theme="@style/Theme.BeaconStitbdone" />
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.Parcel_list_show"
+            android:name="com.velocita.parcelwalamerchant.Activity.Parcel_list_show"
             android:theme="@style/Theme.BeaconStitbdone" />
         <activity
-            android:name="com.xubisoft.parcelwala.Activity.Add_Parcel"
+            android:name="com.velocita.parcelwalamerchant.Activity.Add_Parcel"
             android:theme="@style/Theme.BeaconStitbdone" />
-        <activity android:name="com.xubisoft.parcelwala.Activity.Registration_Page" />
-        <activity android:name="com.xubisoft.parcelwala.Activity.MainActivity">
+        <activity android:name="com.velocita.parcelwalamerchant.Activity.Registration_Page" />
+        <activity android:name="com.velocita.parcelwalamerchant.Activity.MainActivity">
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
